@@ -1,0 +1,22 @@
+[
+  {"name": "Armbar (Juji-Gatame)", "level": "Weiss", "category": "Submission", "description": "Vom Guard: Huefte drehen, Bein ueber den Kopf, Arm zwischen die Knie klemmen, Hueften heben."},
+  {"name": "Triangle Choke (Sankaku-Jime)", "level": "Weiss", "category": "Submission", "description": "Vom Guard: Ein Bein ueber die Schulter, Kopf runter, Beine verschliessen, Winkel korrigieren."},
+  {"name": "Rear Naked Choke", "level": "Weiss", "category": "Submission", "description": "Vom Ruecken: Arm unter Kinn, Hand greift Bizeps, zweite Hand hinter Kopf, zusammendruecken."},
+  {"name": "Kimura", "level": "Weiss", "category": "Submission", "description": "Handgelenk greifen, andere Hand greift eigenes Handgelenk, Arm hinter den Ruecken drehen."},
+  {"name": "Americana", "level": "Weiss", "category": "Submission", "description": "Aus Mount oder Side Control: Handgelenk auf Matte druecken, Figure-Four greifen, nach unten drehen."},
+  {"name": "Guard Pass (Knee Cut)", "level": "Blau", "category": "Pass", "description": "Knie durch die Mitte schneiden, Hueften tief, Schulter drueckt, durchgleiten in Side Control."},
+  {"name": "Hip Escape (Shrimping)", "level": "Weiss", "category": "Escape", "description": "Hueften zur Seite schieben, Platz schaffen, Guard zurueck gewinnen. Wichtigste Bewegung im BJJ."},
+  {"name": "Bridge and Roll (Upa)", "level": "Weiss", "category": "Escape", "description": "Fuss einhaken, Hueften explosiv heben und zur Seite rollen, oben landen."},
+  {"name": "Scissor Sweep", "level": "Weiss", "category": "Sweep", "description": "Aus Closed Guard: Kragen und Aermel greifen, Knie quer, anderes Bein fegt, nach oben rollen."},
+  {"name": "Flower Sweep (Pendulum)", "level": "Weiss", "category": "Sweep", "description": "Aus Guard: Bein des Gegners blockieren, Schwung mit dem anderen Bein holen, umrollen."},
+  {"name": "Collar Choke (Cross Choke)", "level": "Weiss", "category": "Submission", "description": "Aus Mount: Tief in den Kragen greifen, zweite Hand kreuz, Ellbogen zusammen, druecken."},
+  {"name": "De La Riva Guard", "level": "Blau", "category": "Guard", "description": "Fuss um das Bein des Gegners haken, andere Hand greift Ferse, Hueften aktiv halten."},
+  {"name": "Single Leg Takedown", "level": "Weiss", "category": "Takedown", "description": "Level Change, Kopf an die Brust, ein Bein greifen, hochheben oder zur Seite fuehren."},
+  {"name": "Double Leg Takedown", "level": "Weiss", "category": "Takedown", "description": "Level Change, Kopf zur Seite, beide Beine greifen, durch den Gegner laufen."},
+  {"name": "Guillotine Choke", "level": "Weiss", "category": "Submission", "description": "Kopf unter dem Arm, Haende verschliessen, Hueften nach vorne, nach oben ziehen."},
+  {"name": "Mount Escape (Elbow-Knee)", "level": "Weiss", "category": "Escape", "description": "Ellbogen zum Knie bringen, Half Guard zurueck gewinnen, weiter arbeiten."},
+  {"name": "Back Take", "level": "Blau", "category": "Position", "description": "Vom Side Control: Arm durchfaedeln, Hooks setzen, Seatbelt Griff, Ruecken kontrollieren."},
+  {"name": "Omoplata", "level": "Blau", "category": "Submission", "description": "Aus Guard: Bein ueber die Schulter, aufsitzen, Koerper nach vorne druecken, Schulter blockieren."},
+  {"name": "Berimbolo", "level": "Lila", "category": "Sweep", "description": "Aus De La Riva: Unter den Gegner rollen, Ruecken nehmen. Fortgeschrittene Technik!"},
+  {"name": "Closed Guard", "level": "Weiss", "category": "Guard", "description": "Beine um die Hueften schliessen, Gegner kontrollieren, brechen, angreifen. Grundposition im BJJ."}
+]

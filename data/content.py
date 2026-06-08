@@ -3,7 +3,7 @@
 import os
 import json
 import hashlib
-from datetime import date
+from datetime import date, timedelta
 
 _loaded = {}
 STATIC_DIR = os.path.join(os.path.dirname(__file__), 'static')
@@ -21,10 +21,24 @@ def _load_json(filename):
 
 
 def _daily_index(collection, seed='default'):
-    """Deterministic daily index: same item all day, changes at midnight."""
-    day_str = date.today().isoformat() + seed
-    h = int(hashlib.md5(day_str.encode()).hexdigest(), 16)
-    return h % len(collection)
+    """Sequential daily rotation: every item shown once before any repeat.
+
+    Same item all day, advances by one each midnight. A per-seed offset keeps
+    different categories out of lockstep so equal-sized pools don't correlate.
+    """
+    n = len(collection)
+    offset = int(hashlib.md5(seed.encode()).hexdigest(), 16) % n
+    return (date.today().toordinal() + offset) % n
+
+
+def _weekly_index(collection, seed='default'):
+    """Sequential weekly rotation: advances by one each Monday, full coverage."""
+    n = len(collection)
+    today = date.today()
+    monday = today - timedelta(days=today.weekday())
+    week_no = monday.toordinal() // 7
+    offset = int(hashlib.md5(seed.encode()).hexdigest(), 16) % n
+    return (week_no + offset) % n
 
 
 def get_daily_content():
@@ -39,10 +53,16 @@ def get_daily_content():
     if quotes:
         result['quote'] = quotes[_daily_index(quotes, 'quote')]
 
-    # Famous person
-    persons = _load_json('persons.json')
-    if persons:
-        result['famous_person'] = persons[_daily_index(persons, 'person')]
+    # Famous person (Wikipedia "On this day" API, fallback to static list)
+    try:
+        from data.onthisday import fetch_person_of_day
+        person = fetch_person_of_day()
+        if person:
+            result['famous_person'] = person
+    except Exception:
+        persons = _load_json('persons.json')
+        if persons:
+            result['famous_person'] = persons[_daily_index(persons, 'person')]
 
     # Science concept
     science = _load_json('science_de.json')
@@ -71,14 +91,69 @@ def get_daily_content():
     if bjj:
         result['bjj'] = bjj[_daily_index(bjj, 'bjj')]
 
-    # Joke
+    # Joke (pick 2 for the day)
     jokes = _load_json('jokes_de.json')
     if jokes:
-        result['joke'] = jokes[_daily_index(jokes, 'joke')]
+        idx1 = _daily_index(jokes, 'joke')
+        idx2 = _daily_index(jokes, 'joke2')
+        if idx2 == idx1:
+            idx2 = (idx1 + 1) % len(jokes)
+        result['joke'] = {
+            'primary': jokes[idx1],
+            'secondary': jokes[idx2],
+        }
 
-    # Raetsel
+    # Raetsel (pick 2 for the day)
     raetsel = _load_json('raetsel_de.json')
     if raetsel:
-        result['raetsel'] = raetsel[_daily_index(raetsel, 'raetsel')]
+        idx1 = _daily_index(raetsel, 'raetsel')
+        idx2 = _daily_index(raetsel, 'raetsel2')
+        if idx2 == idx1:
+            idx2 = (idx1 + 1) % len(raetsel)
+        result['raetsel'] = {
+            'primary': raetsel[idx1],
+            'secondary': raetsel[idx2],
+        }
+
+    # Buchzitat
+    buchzitate = _load_json('buchzitate.json')
+    if buchzitate:
+        result['buchzitat'] = buchzitate[_daily_index(buchzitate, 'buchzitat')]
+
+    # Fun fact
+    funfacts = _load_json('funfacts_de.json')
+    if funfacts:
+        result['funfact'] = funfacts[_daily_index(funfacts, 'funfact')]
+
+    # Weltrekord
+    weltrekorde = _load_json('weltrekorde.json')
+    if weltrekorde:
+        result['weltrekord'] = weltrekorde[_daily_index(weltrekorde, 'weltrekord')]
+
+    # Cheese of the day
+    try:
+        cheeses = _load_json('cheeses.json')
+        if cheeses:
+            result['cheese'] = cheeses[_daily_index(cheeses, 'cheese')]
+    except Exception:
+        pass
+
+    # KW label for weekly panels
+    today = date.today()
+    kw = "KW{}".format(today.isocalendar()[1])
+
+    # Vegetarian recipe of the week
+    recipes = _load_json('recipes_veggie.json')
+    if recipes:
+        r = dict(recipes[_weekly_index(recipes, 'recipe')])
+        r['kw'] = kw
+        result['recipe'] = r
+
+    # Dessert of the week (to cook with kids)
+    desserts = _load_json('desserts_kids.json')
+    if desserts:
+        d = dict(desserts[_weekly_index(desserts, 'dessert')])
+        d['kw'] = kw
+        result['dessert'] = d
 
     return result

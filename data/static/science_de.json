@@ -28,5 +28,10 @@
   {"term": "Korallen", "domain": "Biologie", "definition": "Korallen sind Tiere, keine Pflanzen. Riffe: 25% aller Meeresarten.", "analogy": "Ein Korallenriff ist wie eine Grossstadt unter Wasser."},
   {"term": "Relativitaetstheorie", "domain": "Physik", "scientist": "Albert Einstein, 1905", "definition": "Zeit vergeht langsamer bei hoher Geschwindigkeit.", "analogy": "Astronauten altern minimal langsamer als wir auf der Erde."},
   {"term": "Bionik", "domain": "Technik", "definition": "Technik von der Natur abschauen.", "analogy": "Klettverschluss von Kletten, Flugzeuge von Voegeln, Schwimmanzuege von Haihaut."},
-  {"term": "Polarlichter", "domain": "Physik", "definition": "Sonnenteilchen bringen Gasmolekuele zum Leuchten.", "analogy": "Wie eine riesige Neonroehre am Himmel, angetrieben von der Sonne."}
+  {"term": "Polarlichter", "domain": "Physik", "definition": "Sonnenteilchen bringen Gasmolekuele zum Leuchten.", "analogy": "Wie eine riesige Neonroehre am Himmel, angetrieben von der Sonne."},
+  {"term": "Schwerkraft", "domain": "Physik", "scientist": "Isaac Newton, 1687", "definition": "Jede Masse zieht jede andere Masse an. Deshalb haelt uns die Erde am Boden.", "analogy": "Wie ein unsichtbares Gummiband zwischen allen Dingen."},
+  {"term": "Magnetismus", "domain": "Physik", "definition": "Manche Metalle ziehen sich an oder stossen sich gegenseitig ab.", "analogy": "Wie unsichtbare Haende, die Eisen festhalten oder wegschieben."},
+  {"term": "Vulkane", "domain": "Geologie", "definition": "Geschmolzenes Gestein aus dem Erdinneren bricht an die Oberflaeche.", "analogy": "Wie ein ueberkochender Topf, nur mit fluessigem Stein."},
+  {"term": "Regenbogen", "domain": "Physik", "definition": "Sonnenlicht wird in Regentropfen in seine Farben zerlegt.", "analogy": "Wie ein Prisma, das weisses Licht in einen Farbfaecher aufteilt."},
+  {"term": "Schwarze Loecher", "domain": "Physik", "definition": "Ein Ort mit so starker Schwerkraft, dass nicht einmal Licht entkommt.", "analogy": "Wie ein Strudel im Weltall, der alles verschluckt."}
 ]

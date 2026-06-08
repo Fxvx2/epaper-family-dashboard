@@ -23,5 +23,12 @@
   {"word": "Feierabend", "type": "Substantiv", "definition": "Das Ende des Arbeitstages und die freie Zeit danach.", "example": "Um 18 Uhr ist endlich Feierabend!"},
   {"word": "Innerer Schweinehund", "type": "Redewendung", "definition": "Die innere Stimme, die einen von guten Vorsaetzen abhaelt.", "example": "Heute habe ich meinen inneren Schweinehund ueberwunden."},
   {"word": "Kuddelmuddel", "type": "Substantiv", "definition": "Ein heilloses Durcheinander, Chaos, Unordnung.", "example": "Auf seinem Schreibtisch herrschte Kuddelmuddel."},
-  {"word": "Zweisamkeit", "type": "Substantiv", "definition": "Das Zusammensein zu zweit, intime gemeinsame Zeit.", "example": "Sie genossen die Zweisamkeit am Abend."}
+  {"word": "Zweisamkeit", "type": "Substantiv", "definition": "Das Zusammensein zu zweit, intime gemeinsame Zeit.", "example": "Sie genossen die Zweisamkeit am Abend."},
+  {"word": "Geborgenheit", "type": "Substantiv", "definition": "Das warme Gefuehl von Sicherheit, Schutz und Angenommensein.", "example": "In den Armen der Mutter empfand das Kind tiefe Geborgenheit."},
+  {"word": "Vorfreude", "type": "Substantiv", "definition": "Die Freude auf etwas Schoenes, das noch bevorsteht.", "example": "Die Vorfreude auf den Urlaub war kaum auszuhalten."},
+  {"word": "Sturmfrei", "type": "Adjektiv", "definition": "Die Wohnung fuer sich allein haben, weil niemand sonst zu Hause ist.", "example": "Heute Abend habe ich endlich sturmfrei."},
+  {"word": "Morgenmuffel", "type": "Substantiv", "definition": "Jemand, der morgens schlecht gelaunt und wortkarg ist.", "example": "Vor dem ersten Kaffee ist er ein echter Morgenmuffel."},
+  {"word": "Weltschmerz", "type": "Substantiv", "definition": "Eine tiefe Traurigkeit ueber den Zustand der Welt.", "example": "An grauen Novembertagen ueberkommt ihn der Weltschmerz."},
+  {"word": "Augenblick", "type": "Substantiv", "definition": "Ein sehr kurzer Moment, kaum laenger als ein Wimpernschlag.", "example": "Fuer einen Augenblick stand die Zeit still."},
+  {"word": "Lebenskuenstler", "type": "Substantiv", "definition": "Jemand, der das Leben auch mit wenig Mitteln leicht und froh meistert.", "example": "Als wahrer Lebenskuenstler machte er aus jedem Tag etwas Besonderes."}
 ]

@@ -18,5 +18,20 @@
   {"name": "Back Take", "level": "Blau", "category": "Position", "description": "Vom Side Control: Arm durchfaedeln, Hooks setzen, Seatbelt Griff, Ruecken kontrollieren."},
   {"name": "Omoplata", "level": "Blau", "category": "Submission", "description": "Aus Guard: Bein ueber die Schulter, aufsitzen, Koerper nach vorne druecken, Schulter blockieren."},
   {"name": "Berimbolo", "level": "Lila", "category": "Sweep", "description": "Aus De La Riva: Unter den Gegner rollen, Ruecken nehmen. Fortgeschrittene Technik!"},
-  {"name": "Closed Guard", "level": "Weiss", "category": "Guard", "description": "Beine um die Hueften schliessen, Gegner kontrollieren, brechen, angreifen. Grundposition im BJJ."}
+  {"name": "Closed Guard", "level": "Weiss", "category": "Guard", "description": "Beine um die Hueften schliessen, Gegner kontrollieren, brechen, angreifen. Grundposition im BJJ."},
+  {"name": "Kimura (Ude-Garami)", "level": "Weiss", "category": "Submission", "description": "Schulterhebel: Handgelenk greifen, eigenen Arm durchfaedeln, Arm des Gegners hinter den Ruecken drehen."},
+  {"name": "Americana (Ude-Garami)", "level": "Weiss", "category": "Submission", "description": "Aus der Seitenkontrolle: Arm im 90-Grad-Winkel zum Boden druecken, Schulter rotieren."},
+  {"name": "Rear Naked Choke (Mata Leao)", "level": "Weiss", "category": "Submission", "description": "Von der Rueckenkontrolle: Arm um den Hals, Hand an den eigenen Bizeps, zweite Hand in den Nacken, zusammendruecken."},
+  {"name": "Cross Collar Choke (Juji-Jime)", "level": "Weiss", "category": "Submission", "description": "Vom Guard oder Mount: beide Haende tief in den Kragen, Ellbogen senken, Handruecken zusammenziehen."},
+  {"name": "Ezekiel Choke (Sode-Guruma-Jime)", "level": "Blau", "category": "Submission", "description": "Vom Mount: ein Arm hinter den Nacken, mit dem Aermel des anderen Arms den Hals abdruecken."},
+  {"name": "Bow and Arrow Choke", "level": "Blau", "category": "Submission", "description": "Von der Rueckenkontrolle: Kragen greifen, Bein ueber die Schulter, wie ein Bogen spannen."},
+  {"name": "Straight Ankle Lock", "level": "Blau", "category": "Submission", "description": "Fuss in die Achsel klemmen, Unterarm unter die Achillessehne, Hueften nach vorne druecken."},
+  {"name": "Hip Bump Sweep", "level": "Weiss", "category": "Sweep", "description": "Vom Guard: aufsetzen, Arm einklemmen, mit der Huefte den Gegner zur Seite kippen."},
+  {"name": "Pendulum Sweep (Flower Sweep)", "level": "Blau", "category": "Sweep", "description": "Vom Guard: Arm und Bein kontrollieren, Bein wie ein Pendel schwingen und den Gegner ueberrollen."},
+  {"name": "Toreando Pass", "level": "Blau", "category": "Pass", "description": "Beide Hosenbeine greifen, die Beine des Gegners zur Seite schieben und um den Guard herumlaufen."},
+  {"name": "Knee Cut Pass", "level": "Blau", "category": "Pass", "description": "Knie diagonal ueber den Oberschenkel des Gegners schneiden und in die Seitenkontrolle gleiten."},
+  {"name": "Mount (Position)", "level": "Weiss", "category": "Position", "description": "Auf dem Bauch des Gegners sitzen, Knie eng am Koerper, fuer Stabilitaet und Angriffe."},
+  {"name": "Side Control (Yoko-Shiho)", "level": "Weiss", "category": "Position", "description": "Quer ueber dem Gegner liegen, Druck mit Brust und Huefte, Arme blockieren."},
+  {"name": "Back Control (Rueckenkontrolle)", "level": "Weiss", "category": "Position", "description": "Hinter dem Gegner, beide Fersen als Haken eingehaengt, Arme um den Oberkoerper."},
+  {"name": "Knee on Belly", "level": "Blau", "category": "Position", "description": "Knie auf den Bauch, anderer Fuss am Boden, hohe Position fuer Druck und schnelle Wechsel."}
 ]
